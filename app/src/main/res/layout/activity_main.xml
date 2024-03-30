@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img1_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/txt1_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img1_M"
+        />
+
+    <ImageView
+        android:id="@+id/img2_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt1_M"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly1_M"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/img2_M"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/EdtEmail_M"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Email"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:id="@+id/EdtPassword_M"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Kata Sandi"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt2_M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Kata Sandi?!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/SecondaryColor"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ly1_M"
+        />
+
+    <Button
+        android:id="@+id/btn1_M"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"
+        android:text="Masuk"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:layout_below="@id/txt2_M"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn1_M">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="belum Punya Akun? "
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_Daf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar!"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="12sp"
+            android:textColor="@color/SecondaryColor"/>
+    </LinearLayout>
+</RelativeLayout>

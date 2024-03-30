@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".LupaSandiActivity">
+
+    <ImageView
+        android:id="@+id/img1_LS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/txt1_LS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Kata Sandi?!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img1_LS"
+        />
+    <ImageView
+        android:id="@+id/img2_LS"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/forget"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt1_LS"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly1_LS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/img2_LS"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/EdtEmail_LS"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:text="Masukkan Email Anda"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppinsregular"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1_LS"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"
+        android:text="Kirim"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:layout_below="@id/ly1_LS"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly2_LS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn1_LS"
+        android:padding="25dp">
+
+        <ImageButton
+            android:id="@+id/ic_kembali_LS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_kembali_LS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/SecondaryColor"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="15dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlsultan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/osman1"
+            android:padding="7dp"/>
+        <TextView
+            android:id="@+id/txtsultan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Osman Ghazi"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="25dp"
+            android:layout_marginLeft="100dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/menjabat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berkuasa: 1299 - 1323"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@id/txtsultan"/>
+
+        <TextView
+            android:id="@+id/wangsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sultan Pertama Utsmaniyah"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@id/menjabat"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
